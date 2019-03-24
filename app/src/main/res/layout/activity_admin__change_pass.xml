@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9006496"
+    tools:context=".Admin_ChangePass">
+
+    <EditText
+        android:id="@+id/edt_oldpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:hint="Old Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edt_newpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_oldpass"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="New Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edt_conpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_newpass"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/edt_newpass"
+        android:ems="10"
+        android:hint="Conform Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_changepass"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_conpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="Change Password" />
+
+
+</RelativeLayout>

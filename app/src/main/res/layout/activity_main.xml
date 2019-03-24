@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9006496"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdlogin">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminlogin"
+            android:text="Admin Login"
+            android:textColor="@color/white"
+            android:paddingLeft="7dp"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/facultylogin"
+            android:text="Faculty Login"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:paddingLeft="7dp"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25sp"
+            android:id="@+id/txtLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="LOGIN"
+            android:textStyle="bold"
+            android:textColor="@color/white_greyish" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="UserName"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"/>
+
+        <!-- <view
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:layout_marginTop="5dp"/>
+ -->
+        <EditText
+            android:id="@+id/edtPassword"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16dp"/>
+
+        <!--   <view
+               android:layout_width="fill_parent"
+               android:layout_height="1dp"
+               android:layout_marginTop="5dp"/>
+   -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/show_hidePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Show Password"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forgot_pass"
+                android:gravity="end"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="Forgot Password ?"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LOGIN"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:textColor="#f9006496"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
