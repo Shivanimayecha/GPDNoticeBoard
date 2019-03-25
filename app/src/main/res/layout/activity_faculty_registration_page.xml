@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9006496"
+    tools:context=".FacultyRegistrationPage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_registration"
+        android:text="FACULTY   REGISTRATION"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white_greyish"
+        android:textSize="25dp"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_username"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="8dp"
+        android:layout_gravity="center_vertical"
+        android:hint="UserName"
+        android:ems="10"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:singleLine="true" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1px"
+        android:background="@color/white_greyish" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_pass"
+        android:hint="Password"
+        android:ems="10"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/password"
+        android:inputType="textPassword"
+        android:drawablePadding="8dp"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:textSize="16dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white_greyish"
+            android:id="@+id/spinner_dept">
+        </Spinner>
+
+
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="REGISTER"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:textColor="#f9006496" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -47,8 +47,10 @@ public class Categories extends AppCompatActivity {
                 adb.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent=new Intent(Categories.this,Categories.class);
-                        startActivity(intent);
+
+                        dialogInterface.cancel();
+                       /* Intent intent=new Intent(Categories.this,Categories.class);
+                        startActivity(intent);*/
                     }
                 });
                 AlertDialog alertDialog = adb.create();
@@ -58,14 +60,14 @@ public class Categories extends AppCompatActivity {
 
 
 
-       /* department.setOnClickListener(new View.OnClickListener() {
+        department.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent intent = new Intent(Categories.this,DepartmentPage.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
         changepass.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,13 +76,13 @@ public class Categories extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-      /*  facultyDeptRegi.setOnClickListener(new View.OnClickListener() {
+        facultyDeptRegi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Categories.this,FacultyDepartPage.class);
+                Intent intent = new Intent(Categories.this,FacultyRegistrationPage.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
     }
 }

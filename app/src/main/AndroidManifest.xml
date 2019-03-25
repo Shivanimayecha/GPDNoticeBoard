@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".Categories">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,8 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Categories" />
-        <activity android:name=".Admin_ChangePass"></activity>
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".Admin_ChangePass" />
+        <activity android:name=".DepartmentPage" />
+        <activity android:name=".FacultyRegistrationPage"></activity>
     </application>
 
 </manifest>
